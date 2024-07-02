@@ -904,6 +904,10 @@ button {
     background: #fff;
 }
 
+.pricing-item--active {
+    box-shadow: 0px 20px 44px 0px rgba(195, 108, 22, 0.06);
+}
+
 .pricing-item__type {
     color: #ff5b2e;
     font-size: 1.2rem;
@@ -962,4 +966,351 @@ button {
     border-bottom: 2px solid var(--color--primary); */
 
     /* background: var(--color--primary); */
+}
+
+/* Review */
+.review {
+    padding: 130px 0 65px;
+}
+
+.review__body {
+    display: flex;
+    align-items: center;
+    column-gap: 44px;
+}
+
+.review__control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    border: 1.5px solid #ffd1c4;
+    background: #fffaf5;
+    color: var(--color--primary);
+    transition: color 0.5s ease, background-color 0.5s ease,
+        border-color 0.5s ease;
+}
+.review__control:nth-of-type(2) {
+    margin-left: auto;
+}
+
+.review__control:hover {
+    cursor: pointer;
+    background: var(--color--primary);
+    color: #fff;
+    border-color: var(--color--primary);
+}
+
+/* Review Content */
+
+.review__content {
+    overflow: hidden;
+}
+
+.review__list {
+    display: flex;
+}
+
+.review-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 115px;
+    flex-shrink: 0;
+}
+
+.review-item__media {
+    position: relative;
+    margin-top: -52px;
+    width: 274px;
+    flex-shrink: 0;
+    border-radius: 137px;
+}
+
+.review-item__media::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 80%;
+    background: #ffda54;
+    border-radius: inherit;
+}
+
+.review-item__img {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    border-radius: inherit;
+}
+
+.review-item__quote {
+    max-width: 553px;
+    margin-top: 24px;
+    color: #000;
+    font-size: 1.8rem;
+    line-height: 1.6; /* 155.556% */
+}
+
+.review-item__name {
+    display: flex;
+    align-items: center;
+    margin-top: 34px;
+    color: #282828;
+    font-family: Sora, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+
+.review-item__name::before {
+    content: "";
+    display: inline-block;
+    margin-right: 8px;
+    width: 20px;
+    height: 2px;
+    background: #000;
+    border-radius: 99px;
+}
+
+.review__dots {
+    margin-top: 56px;
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.review__dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    border: 1px solid var(--color--primary);
+}
+
+.review__dot:hover {
+    background: var(--color--primary);
+    cursor: pointer;
+}
+
+.review__dot--active {
+    pointer-events: none;
+    width: 24px;
+    background: var(--color--primary);
+}
+
+/* Blog */
+
+.blog {
+    padding: 65px 0;
+}
+
+.blog__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog__info {
+    margin-right: 74px;
+    width: 350px;
+}
+
+.blog__desc {
+    margin-top: 0;
+}
+
+.blog__cta {
+    margin-top: 24px;
+    min-width: 182px;
+    border: 1px solid #ff9b7e;
+    color: var(--color--primary);
+    box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+}
+
+.blog__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 54px;
+    column-gap: 48px;
+}
+
+.blog-item__img--wrap {
+    padding: 24px 0 0 36px;
+    border-radius: 24px;
+    background: #90ccff;
+}
+
+.blog-item:nth-child(2) .blog-item__img--wrap {
+    background: #ff997e;
+}
+
+.blog-item:nth-child(3) .blog-item__img--wrap {
+    background: #5bd6e2;
+}
+
+.blog-item__time {
+    color: #fff;
+    font-family: Sora, sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.21; /* 121.429% */
+}
+
+.blog-item__img {
+    margin-top: 25px;
+    display: block;
+    width: 100%;
+    height: 296px;
+    object-fit: cover;
+}
+
+.blog-item__info {
+    padding: 28px 16px 0 0;
+}
+
+.blog-item__title {
+    color: #000958;
+    font-family: Sora, sans-serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.55; /* 154.545% */
+}
+
+.blog-item__desc {
+    margin-top: 16px;
+    color: #656689;
+    font-size: 1.4rem;
+    line-height: 1.71; /* 171.429% */
+}
+
+/* Footer */
+.footer {
+    padding-top: 65px;
+    background: linear-gradient(to right, #fff6ed 42%, #fffaf5 42%);
+}
+
+.footer__inner {
+    display: flex;
+}
+
+.footer-left {
+    width: 42%;
+    padding: 114px 0 148px;
+}
+
+.subscribe-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+    width: 268px;
+    height: 46px;
+    border: 1px solid #ffe3d9;
+    border-radius: 99px;
+    background: #fff;
+    margin-bottom: 68px;
+}
+
+.subscribe-form__input {
+    width: 100%;
+    height: 100%;
+    padding: 0 22px;
+    border: none;
+    outline: none;
+    border-radius: 99px;
+    font-size: 1.4rem;
+}
+
+.subscribe-form__input::placeholder {
+    color: #656689;
+    font-family: Poppins;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.17; /* 116.667% */
+}
+
+.subscribe-form__submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    margin-right: -1px;
+    color: #fff;
+    background: var(--color--primary);
+    border: none;
+    outline: none;
+}
+
+.subscribe-form__submit:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.footer__heading {
+    color: #000958;
+    font-family: Sora, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.11; /* 111.111% */
+}
+
+.social__list {
+    display: flex;
+    margin-top: 16px;
+    column-gap: 16px;
+}
+
+.social__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.social__item:hover {
+    opacity: 0.8;
+}
+
+.footer-right {
+    flex: 1;
+    padding: 52px 0 48px 0;
+}
+
+.footer__row {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 58px 137px;
+    padding-left: 129px;
+}
+
+.footer__list {
+    margin-top: 14px;
+}
+
+.footer__link {
+    line-height: 2;
+    color: #656689;
+    font-size: 1.4rem;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.footer-copyright {
+    margin-top: 52px;
+    color: #656689;
+    font-size: 1.2rem;
+    line-height: 1.17; /* 116.667% */
 }
